@@ -1,0 +1,305 @@
+option lib
+
+subproject librocket
+
+includepaths
+{
+	"src"
+	"include"
+}
+
+defines {
+	STATIC_LIB
+}
+
+files
+{
+	["Marmalade"]
+	("src/Marmalade")
+	MarmaladeEvent.cpp
+	MarmaladeEventListenerInstancer.cpp
+	MarmaladeInput.cpp
+	MarmaladeRenderInterfaceOpenGL.cpp
+	MarmaladeSystemInterface.cpp
+
+	[]
+	("include/Rocket")
+
+	["Controls"]
+	("src/Controls")
+	Clipboard.cpp
+	Controls.cpp
+	DataFormatter.cpp
+	DataQuery.cpp
+	DataSource.cpp
+	DataSourceListener.cpp
+	ElementDataGrid.cpp
+	ElementDataGridCell.cpp
+	ElementDataGridExpandButton.cpp
+	ElementDataGridRow.cpp
+	ElementForm.cpp
+	ElementFormControl.cpp
+	ElementFormControlDataSelect.cpp
+	ElementFormControlInput.cpp
+	ElementFormControlSelect.cpp
+	ElementFormControlTextArea.cpp
+	ElementTabSet.cpp
+	ElementTextSelection.cpp
+	InputType.cpp
+	InputTypeButton.cpp
+	InputTypeCheckbox.cpp
+	InputTypeRadio.cpp
+	InputTypeRange.cpp
+	InputTypeSubmit.cpp
+	InputTypeText.cpp
+	SelectOption.cpp
+	WidgetDropDown.cpp
+	WidgetSlider.cpp
+	WidgetSliderInput.cpp
+	WidgetTextInput.cpp
+	WidgetTextInputMultiLine.cpp
+	WidgetTextInputSingleLine.cpp
+	WidgetTextInputSingleLinePassword.cpp
+	XMLNodeHandlerDataGrid.cpp
+	XMLNodeHandlerTabSet.cpp
+	XMLNodeHandlerTextArea.cpp
+	
+	("include/Rocket/Controls")
+	
+#	["Controls/Python"]
+#	("src/Controls/Python")
+#	DataFormatterWrapper.cpp
+#	DataFormatterWrapper.h
+#	DataGridRowProxy.cpp
+#	DataGridRowProxy.h
+#	DataSourceWrapper.cpp
+#	DataSourceWrapper.h
+#	ElementInterface.cpp
+#	ElementInterface.h
+#	Module.cpp
+#	Module.h
+#	precompiled.cpp
+#	precompiled.h
+#	SelectOptionProxy.cpp
+#	SelectOptionProxy.h
+
+	["Core"]
+	("src/Core")
+	BaseXMLParser.cpp
+	Box.cpp
+	Clock.cpp
+	Context.cpp
+	ContextInstancer.cpp
+	ContextInstancerDefault.cpp
+	ConvolutionFilter.cpp
+	Core.cpp
+	Decorator.cpp
+	DecoratorInstancer.cpp
+	DecoratorNone.cpp
+	DecoratorNoneInstancer.cpp
+	DecoratorTiled.cpp
+	DecoratorTiledBox.cpp
+	DecoratorTiledBoxInstancer.cpp
+	DecoratorTiledHorizontal.cpp
+	DecoratorTiledHorizontalInstancer.cpp
+	DecoratorTiledImage.cpp
+	DecoratorTiledImageInstancer.cpp
+	DecoratorTiledInstancer.cpp
+	DecoratorTiledVertical.cpp
+	DecoratorTiledVerticalInstancer.cpp
+	Dictionary.cpp
+	DocumentHeader.cpp
+	Element.cpp
+	ElementBackground.cpp
+	ElementBorder.cpp
+	ElementDecoration.cpp
+	ElementDefinition.cpp
+	ElementDocument.cpp
+	ElementHandle.cpp
+	ElementImage.cpp
+	ElementInstancer.cpp
+	ElementReference.cpp
+	ElementScroll.cpp
+	ElementStyle.cpp
+	ElementStyleCache.cpp
+	ElementText.cpp
+	ElementTextDefault.cpp
+	ElementUtilities.cpp
+	Event.cpp
+	EventDispatcher.cpp
+	EventInstancer.cpp
+	EventInstancerDefault.cpp
+	EventListenerInstancer.cpp
+	Factory.cpp
+	FileInterface.cpp
+	FileInterfaceDefault.cpp
+	FontDatabase.cpp
+	FontEffect.cpp
+	FontEffectInstancer.cpp
+	FontEffectNone.cpp
+	FontEffectNoneInstancer.cpp
+	FontEffectOutline.cpp
+	FontEffectOutlineInstancer.cpp
+	FontEffectShadow.cpp
+	FontEffectShadowInstancer.cpp
+	FontFace.cpp
+	FontFaceHandle.cpp
+	FontFaceLayer.cpp
+	FontFamily.cpp
+	Geometry.cpp
+	GeometryDatabase.cpp
+	GeometryUtilities.cpp
+	LayoutBlockBox.cpp
+	LayoutBlockBoxSpace.cpp
+	LayoutEngine.cpp
+	LayoutInlineBox.cpp
+	LayoutInlineBoxText.cpp
+	LayoutLineBox.cpp
+	Log.cpp
+	Math.cpp
+	Plugin.cpp
+	PluginRegistry.cpp
+	precompiled.cpp
+	Property.cpp
+	PropertyDefinition.cpp
+	PropertyDictionary.cpp
+	PropertyParserColour.cpp
+	PropertyParserKeyword.cpp
+	PropertyParserNumber.cpp
+	PropertyParserString.cpp
+	PropertySpecification.cpp
+	ReferenceCountable.cpp
+	RenderInterface.cpp
+	Stream.cpp
+	StreamFile.cpp
+	StreamMemory.cpp
+	String.cpp
+	StringCache.cpp
+	StringUtilities.cpp
+	StyleSheet.cpp
+	StyleSheetFactory.cpp
+	StyleSheetNode.cpp
+	StyleSheetNodeSelector.cpp
+	StyleSheetNodeSelectorEmpty.cpp
+	StyleSheetNodeSelectorFirstChild.cpp
+	StyleSheetNodeSelectorFirstOfType.cpp
+	StyleSheetNodeSelectorLastChild.cpp
+	StyleSheetNodeSelectorLastOfType.cpp
+	StyleSheetNodeSelectorNthChild.cpp
+	StyleSheetNodeSelectorNthLastChild.cpp
+	StyleSheetNodeSelectorNthLastOfType.cpp
+	StyleSheetNodeSelectorNthOfType.cpp
+	StyleSheetNodeSelectorOnlyChild.cpp
+	StyleSheetNodeSelectorOnlyOfType.cpp
+	StyleSheetParser.cpp
+	StyleSheetSpecification.cpp
+	SystemInterface.cpp
+	Template.cpp
+	TemplateCache.cpp
+	Texture.cpp
+	TextureDatabase.cpp
+	TextureLayout.cpp
+	TextureLayoutRectangle.cpp
+	TextureLayoutRow.cpp
+	TextureLayoutTexture.cpp
+	TextureResource.cpp
+	UnicodeRange.cpp
+	URL.cpp
+	Variant.cpp
+	Vector2.cpp
+	WidgetSlider.cpp
+	WidgetSliderScroll.cpp
+	WString.cpp
+	XMLNodeHandler.cpp
+	XMLNodeHandlerBody.cpp
+	XMLNodeHandlerDefault.cpp
+	XMLNodeHandlerHead.cpp
+	XMLNodeHandlerTemplate.cpp
+	XMLParser.cpp
+	XMLParseTools.cpp
+	
+	("include/Rocket/Core")
+	
+#	["Core/Python"]
+#	("src/Core/Python")
+#	ContextDocumentProxy.cpp
+#	ContextDocumentProxy.h
+#	ContextInstancer.cpp
+#	ContextInstancer.h
+#	ContextInterface.cpp
+#	ContextInterface.h
+#	ContextProxy.cpp
+#	ContextProxy.h
+#	Converters.cpp
+#	Converters.h
+#	DataSourceWrapper.cpp
+#	DataSourceWrapper.h
+#	ElementAttributeProxy.cpp
+#	ElementAttributeProxy.h
+#	ElementChildrenProxy.cpp
+#	ElementChildrenProxy.h
+#	ElementDocumentWrapper.cpp
+#	ElementDocumentWrapper.h
+#	ElementInterface.cpp
+#	ElementInterface.h
+#	ElementStyleProxy.cpp
+#	ElementStyleProxy.h
+#	EventInstancer.cpp
+#	EventInstancer.h
+#	EventInterface.cpp
+#	EventInterface.h
+#	EventListener.cpp
+#	EventListener.h
+#	EventListenerInstancer.cpp
+#	EventListenerInstancer.h
+#	EventWrapper.cpp
+#	EventWrapper.h
+#	Interfaces.cpp
+#	Module.cpp
+#	Module.h
+#	precompiled.cpp
+#	precompiled.h
+#	Utilities.cpp
+
+#	("include/Rocket/Core/Python")
+#	ConverterScriptObject.h
+#	ElementInstancer.h
+#	ElementWrapper.h
+#	Header.h
+#	NameIndexInterface.h
+#	PickleTypeConverter.h
+#	Python.h
+#	Utilities.h
+#	VectorInterface.h
+#	Wrapper.h
+#	WrapperIter.h
+	
+	["Debugger"]
+	("src/Debugger")
+	Debugger.cpp
+	ElementContextHook.cpp
+	ElementInfo.cpp
+	ElementLog.cpp
+	Geometry.cpp
+	Plugin.cpp
+	SystemInterface.cpp
+	
+	("include/Rocket/Debugger")
+	
+	[]
+	(doc)
+	librocket.defines.txt
+}
+
+subprojects
+{
+	freetype
+}
+
+options 
+{ 
+	#arm-cpu=6
+	#arm-fpu=vfp
+	optimise-speed
+	enable-exceptions
+}

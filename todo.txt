@@ -1,0 +1,4 @@
+* Compiled/cached geometry
+* cached material
+* Python? (probably won't implement this)
+* eye-candy animations (how-to)

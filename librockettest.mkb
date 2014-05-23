@@ -1,0 +1,19 @@
+files
+{
+	[src]
+	(src)
+	test.cpp
+}
+
+includepaths
+{
+	src
+}
+
+subprojects
+{
+	iwgx
+	iwutil
+	librocket
+	#librocket-source
+}
